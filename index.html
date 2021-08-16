@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" 
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" 
+    crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Jocimara Villela</title>
+    <link rel="icon" type="image/png" href="https://img.icons8.com/fluency/48/000000/new-moon.png">
+
+</head>
+<body>
+    <header>
+        <div>
+            <h3>JAV</h3>
+        </div>
+        <ul>
+            <li> 
+                <a target="_blank" href="https://github.com/JocimaraVillela">github</a>
+            </li>
+            <li>
+                <a target="_blank" href="mailto:jocimaravillela@gmail.com">email</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://www.linkedin.com/in/jocimara-villela">linkedin</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <section class="container">
+
+            <div class="foto">
+                <img src="perfil.jpg" alt="Minha foto">
+            </div>
+
+            <div class="name">
+                <h1>Jocimara Villela</h1>
+                <h5>Estudante Front-End</h5>
+            </div>
+
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fas fa-sort-down"></i>
+            </div>
+
+            <div style="display: none;" id="about">
+                <p>
+                    Eu nunca havia pensado na possibilidade de aprender programação, na verdade acreditava que programar era uma habilidade que estava muito distante da minha realidade. 
+                    Afinal, Por que codar se eu trabalho na área administrativa? 
+                    Para minha surpresa, deparei-me com os bugs ao importar arquivos xml para o faturamento, lentamente, os códigos começaram a fazer parte da minha rotina. 
+                    Deste modo, tive a percepção do quão seria importante estudar sobre a área tech. Através das comunidades femininas, tive a oportunidade de conhecer trajetórias incríveis de mulheres que resolveram compartilhar suas vivências na tecnologia e confesso que me encantei com tantas possibilidades. 
+                </p>
+            </div>
+
+            <div class="form">
+                <div>
+                    <p>Deixe seu contato!</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="seu melhor email :)">
+                    <button>enviar</button>
+                </form>
+            </div>
+
+        </section>
+        <script>
+            function displayAbout(){
+                var arrow = document.getElementById('animation');
+                arrow.classList.toggle('rotate');
+                var display = document.getElementById('about');
+                display.classList.toggle('active');
+            }
+        </script>
+    </main>
+</body>
+</html>
